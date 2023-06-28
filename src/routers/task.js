@@ -166,7 +166,7 @@ router.delete('/tasks/:id',auth, async (req,res)=>{
 
         if(!task){
 
-            return res.status(400).send("No Task Found")
+            return res.status(404).send("No Task Found")
         }
         res.send(task)
 
